@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<dc-import name="Case Shell" accent="#F2643C" hint-size="100%,100%">
+
+  <section id="ab-case-02" data-screen-label="Case 02 — Hybrid Credit-Debit Card" style="max-width:1180px; margin:0 auto; padding:clamp(24px,4vw,56px) clamp(24px,5vw,64px) 0;">
+    <div class="ab-rule-top" style="padding-top: clamp(40px,4vw,58px)">
+      <div data-reveal="" style="display:flex; gap:18px; align-items:baseline; font:500 13px/1 'DM Mono',monospace; letter-spacing:.2em; text-transform:lowercase; color:var(--olive); margin-bottom:24px;"><span>{{ num }}</span><span style="color:var(--body);">{{ cat }}</span></div>
+      <div data-mask="" style="display:inline-block;">
+        <h2 data-line="" data-wordmark="" style="margin:0; font-family:'DM Mono',monospace; font-variation-settings:'opsz' 144,'SOFT' 60; font-weight:500; font-size:clamp(34px,5.4vw,74px); line-height:.9; letter-spacing:-.03em;">{{ title }}<span style="display:inline-block; width:.34em; height:.34em; border-radius:50%; background:var(--accent); filter:blur(5px); opacity:.9; margin-left:.12em; vertical-align:.16em;"></span></h2>
+      </div>
+      <p data-reveal="" style="margin:24px 0 0; font:400 clamp(19px,2vw,24px)/1.5 'DM Mono',monospace; color:var(--ink);">{{ tagline }}</p>
+    </div>
+
+    <div data-reveal="" style="display:grid; grid-template-columns:1fr 1fr; gap:clamp(28px,4vw,64px); margin-top:clamp(40px,5vw,72px);">
+      <p style="margin:0; font:400 18px/1.75 'DM Sans',sans-serif; color:var(--body);">Only 8% of Filipinos have a credit card. Banking requirements keep it that way. Meanwhile GCash's lending product, GCredit, had become one of the most-used features in the app: trusted by millions for everyday borrowing, but limited to in-app payments.</p>
+      <p style="margin:0; font:400 18px/1.75 'DM Sans',sans-serif; color:var(--body);">E-wallets had filled the banking gap with debit cards, but every one of them only let users spend from their wallet balance. I saw the opening: bring GCredit onto a physical card. I designed the product from the ground up, expanding GCash's lending and payments verticals in one move, and cutting the barrier to card ownership down to a single valid ID.</p>
+    </div>
+
+    <div data-reveal="" data-tilt="" style="margin-top: clamp(40px,5vw,72px); transform-style: preserve-3d">
+      <image-slot id="ab-card-hero" shape="rounded" radius="22" auto-aspect="" aspect="16/9" fit="contain" placeholder="Drop the card / product hero" data-tilt-in="" style="width: 60%; aspect-ratio: 16/9; margin-left: 20%; margin-right: 20%"></image-slot>
+    </div>
+
+    <!-- design decisions -->
+    <div style="margin-top:clamp(56px,7vw,104px);">
+      <div data-reveal="" style="font:500 13px/1 'DM Mono',monospace; letter-spacing:.2em; text-transform:lowercase; color:var(--accent); margin-bottom:16px;">thought process</div>
+      <div data-mask="" style="margin-bottom:18px;"><h3 data-line="" style="margin:0; font-family:'DM Mono',monospace; font-weight:500; font-size:clamp(30px,4.5vw,56px); letter-spacing:-.02em;">Design decisions</h3></div>
+      <p data-reveal="" style="margin: 0 0 clamp(28px,3vw,44px); font: 400 18px/1.75 'DM Sans',sans-serif; color: var(--body)">A hybrid card with two payment modes had never existed in the market before. Users needed to understand not just how to use it, but when, and they needed to get that without friction, without reading a manual. So every decision came back to one thing: clarity at the point of payment.</p>
+      <div class="ab-cards" style="display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(16px,2vw,24px);">
+        <div data-reveal="" data-tilt="" style="background:var(--skyTint); border-radius:22px; padding:clamp(24px,2.4vw,34px); transform-style:preserve-3d;">
+          <div style="font-family:'DM Mono',monospace; font-variation-settings:'SOFT' 80; font-weight:500; font-size:34px; color:var(--accent); line-height:1;">01</div>
+          <div style="margin:16px 0 12px; font-family:'DM Mono',monospace; font-variation-settings:'opsz' 60,'SOFT' 60; font-weight:500; font-size:23px;">Easy discoverability</div>
+          <p style="margin:0; font:400 15.5px/1.65 'DM Sans',sans-serif; color:var(--body);">GCredit was already trusted in-app, but activating it on a physical card was new territory. A prominent activation badge made sure users immediately understood what the card could do.</p>
+        </div>
+        <div data-reveal="" data-tilt="" style="background:var(--skyTint); border-radius:22px; padding:clamp(24px,2.4vw,34px); transition-delay:.08s; transform-style:preserve-3d;">
+          <div style="font-family:'DM Mono',monospace; font-variation-settings:'SOFT' 80; font-weight:500; font-size:34px; color:var(--accent); line-height:1;">02</div>
+          <div style="margin:16px 0 12px; font-family:'DM Mono',monospace; font-variation-settings:'opsz' 60,'SOFT' 60; font-weight:500; font-size:23px;">Quick switching</div>
+          <p style="margin:0; font:400 15.5px/1.65 'DM Sans',sans-serif; color:var(--body);">The payment-mode switch had to happen in-app, that's just how the Visa network works, and it risked feeling clunky. A single-tap toggle with real-time balance updates made it feel effortless instead.</p>
+        </div>
+        <div data-reveal="" data-tilt="" style="background:var(--skyTint); border-radius:22px; padding:clamp(24px,2.4vw,34px); transition-delay:.16s; transform-style:preserve-3d;">
+          <div style="font-family:'DM Mono',monospace; font-variation-settings:'SOFT' 80; font-weight:500; font-size:34px; color:var(--accent); line-height:1;">03</div>
+          <div style="margin:16px 0 12px; font-family:'DM Mono',monospace; font-variation-settings:'opsz' 60,'SOFT' 60; font-weight:500; font-size:23px;">Easy management</div>
+          <p style="margin:0; font:400 15.5px/1.65 'DM Sans',sans-serif; color:var(--body);">Two payment sources on one card risks confusion at the register. Showing both balances upfront gives users full spending clarity before they even reach the cashier.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- solution -->
+    <div style="margin-top: clamp(56px,7vw,104px); display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px,4vw,64px); align-items: center">
+      <div>
+        <div data-reveal="" style="font:500 13px/1 'DM Mono',monospace; letter-spacing:.2em; text-transform:lowercase; color:var(--olive); margin-bottom:16px;">Solution</div>
+        <div data-mask="" style="margin-bottom:22px;"><h3 data-line="" style="margin:0; font-family:'DM Mono',monospace; font-weight:500; font-size:clamp(28px,3.6vw,46px); line-height:1.02; letter-spacing:-.02em;">Turning a technical constraint into the feature</h3></div>
+        <p data-reveal="" style="margin:0 0 16px; font:400 17px/1.75 'DM Sans',sans-serif; color:var(--body);">Because this is a hybrid card, not a dedicated credit card, the Visa network couldn't switch payment mode at the POS terminal. That switch had to happen in-app, before the transaction.</p>
+        <p data-reveal="" style="margin:0 0 16px; font:400 17px/1.75 'DM Sans',sans-serif; color:var(--body);">So I made the switch itself the feature. One tap changes the active payment method in real time, with instant confirmation, so users know the change registered before they even approach the cashier, all while seeing their credit balance right alongside it.</p>
+        <p data-reveal="" style="margin:0; font:400 17px/1.75 'DM Sans',sans-serif; color:var(--body);">For a first-of-its-kind product, a one-time walkthrough wasn't going to cut it. I built a persistent education layer reachable from any screen via an info icon, covering FAQs, feature comparisons, and payment reminders at every stage of use.</p>
+      </div>
+      <div data-reveal="" data-tilt="" style="transform-style: preserve-3d; width: 60%">
+        <image-slot id="ab-card-dash" shape="rounded" radius="22" auto-aspect="" aspect="4/5" fit="contain" placeholder="Drop · Card Dashboard" data-tilt-in="" style="width:100%; aspect-ratio:4/5;"></image-slot>
+        <div style="margin-top: 12px; font: 400 13px/1 'DM Mono',monospace; letter-spacing: .05em; color: var(--body); text-align: center">Card Dashboard</div>
+      </div>
+    </div>
+
+    <!-- research -->
+    <div style="margin-top: clamp(56px,7vw,104px)">
+      <div data-reveal="" style="font:500 13px/1 'DM Mono',monospace; letter-spacing:.2em; text-transform:lowercase; color:var(--accent); margin-bottom:16px;">Research &amp; iteration</div>
+      <div data-mask="" style="margin-bottom:18px;"><h3 data-line="" style="margin:0; font-family:'DM Mono',monospace; font-weight:500; font-size:clamp(30px,4.5vw,56px); letter-spacing:-.02em;">Testing what felt clear vs. what was</h3></div>
+      <p data-reveal="" style="max-width:62ch; margin:0 0 clamp(28px,3vw,44px); font:400 18px/1.75 'DM Sans',sans-serif; color:var(--body);">I ran two rounds of moderated usability testing across iterations, combining heatmaps and click/eye tracking to find where attention and intent diverged from our assumptions.</p>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:clamp(16px,2vw,24px);">
+        <div data-reveal="" data-tilt="" style="background:var(--oliveTint); border-radius:22px; padding:clamp(26px,2.6vw,38px); transform-style:preserve-3d;">
+          <div style="font-family:'DM Mono',monospace; font-variation-settings:'opsz' 60,'SOFT' 60; font-weight:500; font-size:22px; margin-bottom:12px;">The toggle didn't read as tappable</div>
+          <p style="margin:0; font:400 16px/1.7 'DM Sans',sans-serif; color:var(--body);">Users focused heavily on the balance figures but repeatedly missed the payment-method toggle — the product's most critical interaction. I revised its visual weight and positioning before launch.</p>
+        </div>
+        <div data-reveal="" data-tilt="" style="background:var(--oliveTint); border-radius:22px; padding:clamp(26px,2.6vw,38px); transition-delay:.08s; transform-style:preserve-3d;">
+          <div style="font-family:'DM Mono',monospace; font-variation-settings:'opsz' 60,'SOFT' 60; font-weight:500; font-size:22px; margin-bottom:12px;">Hierarchy fought conversion</div>
+          <p style="margin:0; font:400 16px/1.7 'DM Sans',sans-serif; color:var(--body);">Attention landed on the hero image and tagline rather than the CTAs. I restructured the landing page to lead with the action.</p>
+        </div>
+      </div>
+      <div data-reveal="" data-tilt="" style="margin-top: clamp(28px,3vw,40px); transform-style: preserve-3d; width: 60%; margin-right: 20%; margin-left: 20%">
+        <image-slot id="ab-card-landing" shape="rounded" radius="22" auto-aspect="" aspect="16/9" fit="contain" placeholder="Drop · Card Landing Page" data-tilt-in="" style="width:100%; aspect-ratio:16/9;"></image-slot>
+        <div style="margin-top: 12px; font: 400 13px/1 'DM Mono',monospace; letter-spacing: .05em; color: var(--body); text-align: center">Card Landing Page</div>
+      </div>
+    </div>
+  </section>
+
+</dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}">class Component extends DCLogic {
+  state = { c: null };
+
+  componentDidMount() {
+    import('./cases.js').then((m) => this.setState({ c: m.getCase('hybrid-credit-debit-card') }));
+  }
+
+  componentDidUpdate() {
+    if (window.ABMotion && window.ABMotion.refreshWordmarks) window.ABMotion.refreshWordmarks();
+  }
+
+  renderVals() {
+    const c = this.state.c || {};
+    return {
+      num: c.num || '02',
+      cat: c.cat || 'Fintech · GCash',
+      title: c.title || '',
+      tagline: c.summary || ''
+    };
+  }
+}</script>
+</body>
+</html>

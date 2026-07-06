@@ -1,0 +1,18 @@
+/* ============================================================
+   COMPAT — legacy short token names
+   The portfolio page templates were authored with short
+   variable names (var(--ink), var(--accent), …). These alias
+   them onto the canonical --ab-* tokens so the values live in
+   one place (tokens/colors.css). --accent is also the live
+   handle the page logic overrides per-page (accent prop).
+   ============================================================ */
+:root{
+  --ink:       var(--ab-ink);
+  --cream:     var(--ab-cream);
+  --body:      var(--ab-body);
+  --sky:       var(--ab-sky);
+  --accent:    var(--ab-accent);
+  --olive:     var(--ab-olive);
+  --skyTint:   var(--ab-sky-tint);
+  --oliveTint: var(--ab-olive-tint);
+}

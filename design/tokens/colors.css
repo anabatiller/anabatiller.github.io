@@ -1,0 +1,32 @@
+/* ============================================================
+   COLORS — Ana Batiller portfolio
+   A warm-paper base (cream / ink / clay-brown body text) lifted
+   by a cool periwinkle accent and a muted antique-gold olive.
+   ============================================================ */
+:root{
+  /* --- base palette --- */
+  --ab-ink:        #371B05;  /* near-black warm brown — headlines, dark surfaces */
+  --ab-cream:      #FFFEFA;  /* warm off-white — the page */
+  --ab-body:       #5A4632;  /* clay brown — body copy */
+  --ab-sky:        #D2DDFB;  /* periwinkle — hairlines, selection */
+  --ab-accent:     #6E82DB;  /* periwinkle-blue — primary accent */
+  --ab-olive:      #9E8D35;  /* antique gold — eyebrows, numerals */
+  --ab-sky-tint:   #EEF2FE;  /* palest blue — cool card surface */
+  --ab-olive-tint: #F7F2E2;  /* palest gold — warm card surface */
+  --ab-cursor:     #FB885B;  /* clay-coral — cursor glow only (multiply blend) */
+
+  /* --- semantic aliases --- */
+  --text-primary:    var(--ab-ink);
+  --text-body:       var(--ab-body);
+  --text-accent:     var(--ab-accent);
+  --text-eyebrow:    var(--ab-olive);
+  --text-on-ink:     var(--ab-cream);
+
+  --surface-page:      var(--ab-cream);
+  --surface-card-cool: var(--ab-sky-tint);
+  --surface-card-warm: var(--ab-olive-tint);
+  --surface-ink:       var(--ab-ink);
+
+  --line:        var(--ab-sky);
+  --selection:   var(--ab-sky);
+}

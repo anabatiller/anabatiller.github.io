@@ -1,0 +1,36 @@
+/* ============================================================
+   MOTION, RADII, SURFACE TREATMENTS — Ana Batiller portfolio
+   One easing curve everywhere. Reveal-on-scroll, masked lines,
+   pointer tilt + magnetism, a coral cursor glow, a velocity
+   marquee. Restraint over flourish.
+   ============================================================ */
+:root{
+  /* --- easing --- */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);   /* the only curve used */
+
+  /* --- durations --- */
+  --dur-reveal: .92s;    /* fade + rise on scroll */
+  --dur-mask:   1.05s;   /* line wipe from mask */
+  --dur-hover:  .5s;     /* hover transitions */
+  --dur-tilt:   .6s;     /* pointer tilt settle */
+
+  /* --- reveal --- */
+  --reveal-shift: 46px;  /* translateY start for [data-reveal] */
+  --reveal-scale: .975;  /* scale start for [data-reveal] */
+
+  /* --- radii --- */
+  --radius-card:  22px;  /* insight / solution cards */
+  --radius-media: 22px;  /* image slots */
+  --radius-soft:  14px;  /* small thumbnails */
+  --radius-pill:  999px;
+
+  /* --- lines & borders --- */
+  --border-hair: 1.5px solid var(--line);
+
+  /* --- shadows (warm, long, low-opacity) --- */
+  --shadow-media: 0 30px 60px -34px rgba(55, 27, 5, .30);
+  --shadow-float: 0 26px 54px -28px rgba(55, 27, 5, .45);
+
+  /* --- motifs --- */
+  --dot-blur: 8px;       /* the soft periwinkle dot beside headlines */
+}

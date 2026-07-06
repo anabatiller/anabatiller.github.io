@@ -1,0 +1,49 @@
+/* ============================================================
+   TYPOGRAPHY — Ana Batiller portfolio
+   Three families, strict roles:
+   - Fraunces (variable serif): display & headlines. Soft, optical.
+   - DM Sans: body copy, running prose.
+   - DM Mono: eyebrows, labels, meta, taglines, captions.
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
+
+/* Palmios — display headers (h1–h3). Palmios by Studio Ludis. */
+@font-face{
+  font-family:'Palmios';
+  src:url('../Palmios.woff2') format('woff2');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+
+:root{
+  /* --- families --- */
+  --font-head:    'Palmios', 'Fraunces', serif;  /* h1–h3 display headers */
+  --font-display: 'Fraunces', serif;
+  --font-body:    'DM Sans', sans-serif;
+  --font-mono:    'DM Mono', monospace;
+
+  /* --- display scale (fluid) --- */
+  --type-hero:     clamp(56px, 10vw, 132px);  /* name / page hero */
+  --type-display:  clamp(46px, 8vw, 116px);   /* project title */
+  --type-h2:       clamp(28px, 3.6vw, 46px);  /* section headline */
+  --type-h3:       clamp(30px, 4.5vw, 56px);  /* sub-headline */
+  --type-tagline:  clamp(19px, 2vw, 24px);    /* mono lead line */
+  --type-body:     18px;                      /* running copy */
+  --type-meta:     15px;                       /* card body / caption */
+  --type-eyebrow:  13px;                       /* uppercase label */
+
+  /* --- weights & optical (Fraunces is variable) --- */
+  --fr-light:   340;   /* hero wordmark */
+  --fr-bold:    700;   /* headlines */
+  --fr-black:   900;   /* big titles, numerals */
+
+  /* --- tracking --- */
+  --track-eyebrow: .2em;    /* labels, all-caps */
+  --track-tight:   -.02em;  /* headlines */
+  --track-tighter: -.03em;  /* big display */
+
+  /* --- line-height --- */
+  --leading-display: .9;
+  --leading-body:    1.75;
+}
