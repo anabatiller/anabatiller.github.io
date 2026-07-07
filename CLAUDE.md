@@ -55,6 +55,21 @@ push to `main` auto-deploys in ~30 seconds. The repo was previously named
    noreply@anthropic.com && git config user.name Claude`). Why: anything else
    shows as Unverified on GitHub and trips this repo owner's checks.
 
+## Owner-only areas — never change these unless Ana explicitly asks
+
+- **The bio copy** — the hero paragraph ("Product designer, 8+ years…") and
+  the status pill ("currently on summer break in tokyo"). This is Ana's voice
+  and current life status; do not "improve", update, or restructure it on your
+  own initiative, even while doing adjacent work.
+- **The type system** — Palmios as the h1–h3 display face, the Fraunces
+  fallback, and the DM Sans / DM Mono roles. Do not swap fonts, add weights,
+  or remove the Palmios override. (Palmios is a licensed commercial face —
+  replacing or re-hosting it is an owner decision.)
+- **Contact links** — the email (`mailto:anabatillerr@gmail.com`) and LinkedIn
+  URL appear in the hero and the footer of every page. If any task seems to
+  require changing them, stop and confirm with Ana first: a typo here
+  silently breaks the site's entire purpose (people reaching her).
+
 ## Design guardrails (summary — DESIGN_SYSTEM.md is the full law)
 
 - **Colors:** only the tokens in `assets/site.css` (`--ink #371B05`, cream
@@ -105,6 +120,32 @@ push to `main` auto-deploys in ~30 seconds. The repo was previously named
 4. **Images:** name them `ab-<caseid>-<slot>.webp` in `images/`.
 5. Section anatomy, spacing, and card patterns are documented in `README.md`
    ("Screens / Views") — mirror an existing case rather than improvising.
+
+**Future case studies — expectations set by the owner:**
+
+- **Numbering & order:** next case is `04`; the landing index stays in
+  display order (`design/cases.js` mirrors it). Existing numbers never shift.
+- **Accent color:** pick one distinct hue per case, in the same muted-warm
+  register as the existing three (`#4F63E3`, `#F2643C`, `#C98A2E`). The Case
+  Shell's prop options suggest good candidates: `#9E8D35`, `#C2614A`,
+  `#5B8C7B`. Never reuse an existing case's accent, and never introduce a
+  neon or pure-saturated color.
+- **Story spine:** follow the established arc — hero (num/category/title/
+  tagline) → challenge/approach two-column intro → research or testing
+  (insight cards) → solution (cards + imagery) → outcome (3 big stats over a
+  hairline rule). PODD is the fullest example; the Hybrid Card page shows a
+  leaner variant. Eyebrows name the phase (`Research`, `Solution`, `Results`).
+- **Stats:** three per outcome row, numerals in the big DM Mono style, first
+  stat in the case accent, captions ≤ 24ch. Numbers do the bragging — no
+  adjectives.
+- **Copy is drafted, not final:** write case copy in Ana's voice (first
+  person, plain, evidence-led — see DESIGN_SYSTEM.md "Content fundamentals")
+  but treat every title, tagline, and summary as a draft for her to approve
+  before the case goes live. Ship the page structure; let her sign off on
+  the words.
+- **Images:** WebP, named `ab-<caseid>-<slot>.webp`, roughly 20–300 KB each,
+  natural aspect ratio (pages size to it automatically). Ask Ana for the
+  actual imagery rather than using placeholders on the live site.
 
 ## Deploy & troubleshooting
 
