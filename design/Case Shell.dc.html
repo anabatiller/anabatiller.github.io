@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="case.css">
 <script>
   (function(){ try{ if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){ document.documentElement.classList.add('js-anim'); } }catch(e){} })();
 </script>
@@ -32,9 +33,12 @@
      ===================================================================== -->
 <div style="font-family:'DM Sans',sans-serif; position:relative;">
 
-  <header style="max-width:1180px; margin:0 auto; padding:clamp(28px,5vw,56px) clamp(24px,5vw,64px) 0;">
-    <a class="ablink" data-magnetic="" href="Ana%20Batiller%20-%20Case%20Studies.dc.html" style="display:inline-flex; align-items:center; gap:9px;"><span style="width:17px; height:17px; border-radius:50%; background:var(--accent); filter:blur(6px); opacity:.85;"></span>back to work</a>
-  </header>
+  <nav class="cnav">
+    <div class="cwrap cnav-in">
+      <a class="cnav-mark" href="Ana%20Batiller%20-%20Case%20Studies.dc.html">ana batiller</a>
+      <a class="cnav-back" href="Ana%20Batiller%20-%20Case%20Studies.dc.html"><span class="d"></span>back to work</a>
+    </div>
+  </nav>
 
   {{ children }}
 

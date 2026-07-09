@@ -6,6 +6,7 @@
    ============================================================ */
 *{box-sizing:border-box;}
 html,body{margin:0;}
+html{overflow-x:hidden;}
 body{background:var(--surface-page); color:var(--text-primary); -webkit-font-smoothing:antialiased; overflow-x:hidden;}
 ::selection{background:var(--selection); color:var(--ab-ink);}
 

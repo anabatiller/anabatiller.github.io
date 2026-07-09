@@ -20,6 +20,7 @@ const CASES = [
     cat: 'Fintech · GCash',
     title: 'GCash Global',
     accent: '#4F63E3',
+    thumb: '../images/ab-gp-thumb.webp',
     summary: 'Redesigned the GCash Global Payments experience, driving overseas usage from 5% to 80%+'
   },
   {
@@ -29,6 +30,7 @@ const CASES = [
     cat: 'Fintech · GCash',
     title: 'Hybrid Credit-Debit Card',
     accent: '#F2643C',
+    thumb: '../images/ab-card-thumb.webp',
     summary: 'The first of its kind in the Philippines. One card. Two payment methods. No bank account needed'
   },
   {
@@ -38,6 +40,7 @@ const CASES = [
     cat: 'Innovation Lab · Team project',
     title: 'PODD',
     accent: '#C98A2E',
+    thumb: '../images/ab-podd-thumb.webp',
     summary: 'A network of private, bookable focus pods for remote workers — 2nd place at the Innovation Lab final pitch'
   }
 ];
